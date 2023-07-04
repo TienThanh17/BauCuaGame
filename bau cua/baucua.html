@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bau Cua</title>
+    <link rel="stylesheet" href="baucua.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+    <div class="table">
+        <img src="/assets/bau.png" alt="">
+        <img src="/assets/cua.png" alt="">
+        <img src="/assets/ga.png" alt="">
+    </div>
+    <div class="table">
+        <img src="/assets/ca.png" alt="">
+        <img src="/assets/nai.png" alt="">
+        <img src="/assets/tom.png" alt="">
+    </div>
+
+    <div class="result">
+        <img src="assets/white.png" alt="" id="result1">
+        <img src="assets/white.png" alt="" id="result2">
+        <img src="assets/white.png" alt="" id="result3">
+    </div>
+
+    <button class="btnXoc">Xốc</button>
+
+    <div class="betContainer">
+        <h2>Tiền Cược: <span id="money">0</span></h2>
+        <div class="childBetContainer bau">
+            <label for="betBau">Bầu</label>
+            <input type="text" id="betBau" class="betInput" placeholder="Tiền cược">
+        </div>
+        <div class="childBetContainer cua">
+            <label for="betCua">Cua</label>
+            <input type="text" name="bet" id="betCua" class="betInput" placeholder="Tiền cược">
+        </div>
+        <div class="childBetContainer tom">
+            <label for="betTom">Tôm</label>
+            <input type="text" name="bet" id="betTom" class="betInput" placeholder="Tiền cược">
+        </div>
+        <div class="childBetContainer ca">
+            <label for="betCa">Cá</label>
+            <input type="text" name="bet" id="betCa" class="betInput" placeholder="Tiền cược">
+        </div>
+        <div class="childBetContainer nai">
+            <label for="betNai">Nai</label>
+            <input type="text" name="bet" id="betNai" class="betInput" placeholder="Tiền cược">
+        </div>
+        <div class="childBetContainer ga">
+            <label for="betGa">Gà</label>
+            <input type="text" name="bet" id="betGa" class="betInput" placeholder="Tiền cược">
+        </div>
+        <button class="betContainer_btn" id="btnChot">Chốt sổ</button>
+        <button class="betContainer_btn" id="btnBanMoi">Bàn mới</button>
+        <button class="betContainer_btn" id="btnLichSu">Lịch sử</button>
+    </div>
+
+    <div id="historyContainer">
+        <div class="history-content">
+          <span class="close">&times;</span>
+          <h2>Lịch sử cược</h2>
+          <table id="historyTable">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tiền trước cược</th>
+                <th>Kết quả cược</th>
+                <th>Tiền sau cược</th>
+                <th>Thời gian</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+    </div>
+
+    <script src="baucua.js"></script>
+</body>
+
+</html>
