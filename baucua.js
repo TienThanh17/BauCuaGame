@@ -197,6 +197,8 @@ btnBanMoi.addEventListener("click", () => {
     alert("gà quá cho 2 chục xài chơi nè");
     money = 20000;
   }
+  moneyHTML.innerText = money.toLocaleString();
+  localStorage.setItem("betMoney", money);
 });
 
 btnLichSu.addEventListener("click", () => {});
