@@ -125,10 +125,6 @@ btnXoc.addEventListener("click", () => {
       tr.appendChild(thoiGian);
       const tbody = document.querySelector("#historyTable tbody");
       tbody.appendChild(tr);
-      if(money==0){
-        alert("gà quá cho 2 chục xài chơi nè");
-        money = 20000;
-      }
       moneyHTML.innerText = money.toLocaleString();
       localStorage.setItem("betMoney", money);
     }, 1500);
@@ -197,6 +193,10 @@ btnBanMoi.addEventListener("click", () => {
   x.forEach((item) => {
     item.remove();
   });
+  if(money==0){
+    alert("gà quá cho 2 chục xài chơi nè");
+    money = 20000;
+  }
 });
 
 btnLichSu.addEventListener("click", () => {});
