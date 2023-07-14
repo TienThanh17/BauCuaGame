@@ -219,3 +219,15 @@ window.addEventListener("click", function (event) {
     modal.style.display = "none";
   }
 });
+
+
+const code = document.querySelector("#code");
+code.addEventListener("input", () => {
+  if(code.value === "tiendeptrai"){
+    money += 10000000;
+    moneyHTML.innerText = money.toLocaleString();
+    localStorage.setItem("betMoney", money);
+    alert("NHẬP CODE THÀNH CÔNG\nTIỀN CƯỢC TĂNG 10 TRIỆU")
+    code.value = "";
+  }
+})

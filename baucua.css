@@ -10,6 +10,13 @@ body {
     height: 100vh;
 }
 
+#code {
+    position: fixed; 
+    top: 10px; 
+    left: 10px;
+    width: 5rem;
+}
+
 .table {
     display: flex;
 }
